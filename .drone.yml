@@ -12,6 +12,7 @@ publish:
     password: $$DOCKER_PASSWORD
     email: $$DOCKER_EMAIL
 
+
 deploy:
   webhook:
     image: plugins/drone-webhook
