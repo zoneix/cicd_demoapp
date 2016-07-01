@@ -16,9 +16,15 @@ class HelloClass(Resource):
         text = "Hello Class!"
         return text
 
+class HelloTest(Resource):
+    def get(self):
+        text = "Hello Test!"
+        return text
+
 
 api.add_resource(HelloWorld, '/hello/world')
 api.add_resource(HelloClass, '/hello/class')
+api.add_resource(HelloTest, '/hello/test')
 
 if __name__ == '__main__':
     # Runn Flask
