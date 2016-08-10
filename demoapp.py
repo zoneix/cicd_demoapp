@@ -11,7 +11,15 @@ class HelloWorld(Resource):
         text = "Hello World!"
         return text
 
+class HelloUniverse(Resource):
+    def get(self):
+        text = "Hello Universe!"
+        return text
+
+
 api.add_resource(HelloWorld, '/hello/world')
+api.add_resource(HelloUniverse, '/hello/universe')
+
 
 if __name__ == '__main__':
     # Runn Flask
