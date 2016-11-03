@@ -20,6 +20,13 @@ class HelloJimmy(Resource):
 
 api.add_resource(HelloJimmy, '/hello/jimmy')
 
+class HelloBozo(Resource):
+    def get(self):
+        text = "Hello Bozo!"
+        return text
+
+api.add_resource(HelloJimmy, '/hello/bozo')
+
 if __name__ == '__main__':
     # Runn Flask
     app.run(debug=True, host='0.0.0.0', port=int("5000"))
